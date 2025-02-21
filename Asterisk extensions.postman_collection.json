@@ -10,7 +10,8 @@
 			"name": "Get All Extensions",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "http://172.25.25.1:8080/extensions"
 			},
 			"response": []
 		},
@@ -36,7 +37,17 @@
 			"name": "Update Extension Password",
 			"request": {
 				"method": "PUT",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://172.25.25.1:8080/extensions/113"
 			},
 			"response": []
 		},
