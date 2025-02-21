@@ -16,6 +16,15 @@
 			"response": []
 		},
 		{
+			"name": "Get One Extension",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://172.25.25.1:8080/extensions/113"
+			},
+			"response": []
+		},
+		{
 			"name": "Create Extensions",
 			"request": {
 				"method": "POST",
