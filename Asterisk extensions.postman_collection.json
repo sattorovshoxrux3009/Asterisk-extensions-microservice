@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "7df02728-c075-4f09-b1a1-f686c2e2f15e",
+		"name": "Asterisk extensions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39265922"
+	},
+	"item": [
+		{
+			"name": "Get All Extensions",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Extensions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"extension_id\":105,\r\n        \"name\":\"105\",\r\n        \"email\":\"example@gmail.com\",\r\n        \"technology\":\"pjsip\",\r\n        \"max_contacts\": 1,\r\n        \"password\":\"12345678\"\r\n    },\r\n    {\r\n        \"extension_id\":106,\r\n        \"name\":\"106\",\r\n        \"email\":\"example@gmail.com\",\r\n        \"technology\":\"pjsip\",\r\n        \"max_contacts\": 2\r\n    },\r\n    {\r\n        \"extension_id\":107,\r\n        \"name\":\"107\",\r\n        \"email\":\"example@gmail.com\",\r\n        \"technology\":\"pjsip\",\r\n        \"max_contacts\": 3,\r\n        \"password\":\"12345678\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://172.25.25.1:8080/extensions"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Extension Password",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Extension",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://172.25.25.1:8080/extensions/113"
+			},
+			"response": []
+		}
+	]
+}
